@@ -16,11 +16,11 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    if (BUILD_TOOL == 'maven') {
-                        sh 'mvn clean package'
-                    } else {
-                        sh 'npm install'
-                    }
+                   
+                        sh 'mvn build'
+                   
+                       
+                    
                 }
             }
         }
